@@ -10,6 +10,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class BranchPaginateResponseDto {
-    private List<RoomPaginateResponseDto> dataList;
+    private List<BranchPaginateResponseDto> dataList;
     private long dataCount;
 }

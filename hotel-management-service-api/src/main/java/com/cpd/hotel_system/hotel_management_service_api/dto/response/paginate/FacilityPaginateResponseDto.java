@@ -1,5 +1,6 @@
 package com.cpd.hotel_system.hotel_management_service_api.dto.response.paginate;
 
+
 import lombok.*;
 
 import java.util.List;
@@ -10,6 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class FacilityPaginateResponseDto {
-    private List<RoomPaginateResponseDto> dataList;
+    private List<FacilityPaginateResponseDto> dataList;
     private long dataCount;
 }
