@@ -13,13 +13,12 @@ import java.util.List;
 @Builder
 public class ResponseHotelDto {
     private String hotelId;
-    private String activeStatus;
-    private LocalDateTime cratedAt;
+    private boolean activeStatus;
+    private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String description;
     private String hotelName;
-    private int startRating;
+    private int starRating;
     private BigDecimal startingFrom;
     private List<ResponseBranchDto> branches;
-
 }

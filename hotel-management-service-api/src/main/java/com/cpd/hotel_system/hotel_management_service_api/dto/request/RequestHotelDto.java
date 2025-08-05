@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Builder
 public class RequestHotelDto {
-    private  String description;
+    private String description;
     private String hotelName;
-    private int startRating;
+    private int starRating;
     private BigDecimal startingFrom;
 }
