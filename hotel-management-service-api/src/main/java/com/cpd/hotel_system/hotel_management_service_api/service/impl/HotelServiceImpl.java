@@ -106,14 +106,13 @@ public class HotelServiceImpl implements HotelService {
 
         return hotel == null ? null
                 : ResponseHotelDto.builder()
+                        .hotelId(hotel.getHotelId())
                         .hotelName(hotel.getHotelName())
-                        .hotelId(UUID.randomUUID().toString())
-                        .starRating(hotel.getStarRating())
-                        .description(byteCodeHandlar.blobToString(hotel.getDescription()))
-                        .createdAt(LocalDateTime.now())
-                        .updatedAt(LocalDateTime.now())
                         .activeStatus(hotel.getActiveStatus())
                         .startingFrom(hotel.getStartingFrom())
+                        .updatedAt(LocalDateTime.now())
+                        .createdAt(LocalDateTime.now())
+                        .description(byteCodeHandlar.blobToString(hotel.getDescription()))
                         .branches(
                                 hotel.getBranches().stream()
                                         .map(e -> {
@@ -136,5 +135,6 @@ public class HotelServiceImpl implements HotelService {
                         .build();
 
     }
+    
 
 }
